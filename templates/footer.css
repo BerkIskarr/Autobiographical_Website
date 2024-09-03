@@ -1,0 +1,29 @@
+/* styling of the footer including navigations */
+
+footer { 
+  right: 0;
+  left: 0;  
+  position: absolute;           
+  background-color: #333;  
+  color: white;          
+  display: flex;
+  align-items: center;
+  height: 60px; 
+  bottom: 0;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav p {
+  margin: 20;
+  margin-right: 20px; 
+}
+
+footer nav a{
+  color: white;
+  margin-right: 30px;
+}

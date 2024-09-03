@@ -1,0 +1,255 @@
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- contact symbols -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>Berk Iskar | Books</title>
+    <style>
+      
+      header {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      h1 {
+        margin: 0;
+       align-items: center;
+      }
+      nav {
+        display:flex;
+        
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a {
+        
+        align-self: left;
+        text-decoration: none;
+      }
+
+      html{
+      position: relative;
+    }
+    /* background styling */
+      html::before{
+        content:'';
+        background: url(Essex.png)  center center;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.15; 
+      }
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        line-height: 1.5;
+      }
+      .card {
+        float: left;
+        padding: 5px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      * {box-sizing:border-box}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+      
+      
+      }
+
+      /* Make the images invisible by default */
+      .Containers {
+        display: none;
+
+      }
+
+      /* forward & Back buttons */
+      .Back, .forward {
+        cursor: pointer;
+        position: absolute;
+        top: 48%;
+        width: auto;
+        margin-top: -23px;
+        padding: 17px;
+        color: grey;
+        font-weight: bold;
+        font-size: 19px;
+        transition: 0.4s ease;
+        border-radius: 0 5px 5px 0;
+        user-select: none;
+      }
+
+      /* Place the "forward button" to the right */
+      .forward {
+        right: 0px;
+        border-radius: 4px 0 0 4px;
+      }
+
+      /*when the user hovers,add a black background with some little opacity */
+      .Back:hover, .forward:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption Info */
+      .Info {
+        color: #ffffff;
+        font-size: 16px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Worknumbering (1/6 etc) */
+      .MessageInfo {
+        color: #ffffff;
+        font-size: 17px;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The circles or bullets and indicators */
+      .dots {
+        cursor: pointer;
+        height: 16px;
+        width: 16px;
+        margin: 0 3px;
+        background-color: #acc;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.5s ease;
+      }
+
+      .enable, .dots:hover {
+        background-color: #717161;
+      }
+
+      /* Faint animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.4s;
+        animation-name: fade;
+        animation-duration: 1.4s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .5}
+        to {opacity: 2}
+      }
+
+      @keyframes fade {
+        from {opacity: .5}
+        to {opacity: 2}
+      }
+    </style>
+  </head>
+ <Body>
+  <header>
+    <h1>My Favourite Books</h1>   
+  </header>
+
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 6</div>
+    <img src="81PaCM2bZqL.jpg" style="width:100%; height: 740px;">
+    <div class="Info">The Power of your subconscious mind by Joseph Murphy</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 6</div>
+    <img src="81bsw6fnUiL.jpg" style="width:100%; height: 740px;">
+    <div class="Info">Rich Dad Poor Dad by Robert Kiyosaki and Sharon Lechter</div> 
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 6</div>
+    <img src="51VAHXjQvSL.jpg" style="width:100%; height: 740px;">
+    <div class="Info">Improbable by Adam Fawer</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">4 / 6</div>
+    <img src="91dSMhdIzTL.jpg" style="width:100%; height: 740px;">
+    <div class="Info">A Game of Thrones by George R. R. Martin</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">5 / 6</div>
+    <img src="81WUAoL-wFL.jpg" style="width:100%; height: 740px;">
+    <div class="Info">Lord of the Flies by William Golding</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">6 / 6</div>
+    <img src="81vqbprkEgL.jpg" style="width:100%; height: 740px;">
+    <div class="Info">Assassin's Creed: Renaissance by Anton Gill</div>
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  <span class="dots" onclick="currentSlide(4)"></span>
+  <span class="dots" onclick="currentSlide(5)"></span>
+  <span class="dots" onclick="currentSlide(6)"></span>
+</div> 
+</Body>
+
+<!-- javascript file for the carousel -->
+<script src="boooks.js"></script>
+
+<!-- footer -->
+<footer> 
+  <nav>
+    <p>Contact me:</p>
+    <a href="tel:555-555-5555">
+      <i class="fa fa-phone"></i>
+    </a>
+    <a href="https://www.instagram.com/cbum/?hl=en">
+      <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/berk.iskar.28">
+      <i class="fa fa-facebook-f"></i>
+    </a>
+    <a href="https://www.youtube.com/@StarTalk">
+      <i class="fa fa-youtube"></i>
+    </a>
+  </nav>
+</footer>
+</html>
